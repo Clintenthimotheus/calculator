@@ -1,7 +1,15 @@
+*{
+    
+    padding: 0px;
+    margin: 0px;
+}
+
+
 body {
     background-image: url(https://img.freepik.com/premium-photo/modern-brick-wall-3d-rendering_118019-218.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    overflow-x: hidden;
 
 
 }
@@ -60,7 +68,13 @@ label {
     
 
     body{
-        height:45rem;
+        height:50rem;
+    }
+    center{
+        margin-top: 2rem;
+    }
+   .head-box{
+        margin-top: 2rem;
     }
     
 }
