@@ -69,6 +69,7 @@ label {
 
     body{
         height:50rem;
+        background-repeat: repeat;
     }
     center{
         margin-top: 2rem;
