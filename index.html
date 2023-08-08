@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="calcultor.js"></script>
+    <link rel="stylesheet" href="media.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar&family=Tilt+Prism&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <center>
+       
+
+        <h1 class="h1" style="color: #fbf0f0; font-family: 'Tilt Prism', cursive; font-size: 5.5rem;">Calculator</h1>
+        <div class="head-box">
+
+            <div><input id="result" type="text" placeholder="Enter.."></div><br>
+            <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                <input class="btn-check" id="seven7" autocomplete="off">
+                <label class="btn btn-outline-light" for="seven7" onclick="displayNumber(7)"> 7</label>
+
+                <input class="btn-check" id="btncheck8" autocomplete="off">
+                <label class="btn btn-outline-light" for="btncheck8" onclick="displayNumber(8)"> 8</label>
+
+                <input class="btn-check" id="btncheck9" autocomplete="off">
+                <label class="btn btn-outline-light" for="btncheck9" onclick="displayNumber(9)"> 9</label>
+
+
+                <input class="btn-check" id="btncheck=" autocomplete="off">
+                <label class="btn btn-outline-warning" for="btncheck=" onclick="evaluateExp()"> <i
+                        class="fa-solid fa-equals"></i></label>
+
+
+            </div><br>
+            <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                <input class="btn-check" id="btncheck4" autocomplete="off">
+                <label class="btn btn-outline-light" for="btncheck4" onclick="displayNumber(4)"> 4</label>
+
+                <input class="btn-check" id="btncheck5" autocomplete="off">
+                <label class="btn btn-outline-light" for="btncheck5" onclick="displayNumber(5)">5</label>
+
+                <input class="btn-check" id="btncheck6" autocomplete="off">
+                <label class="btn btn-outline-light" for="btncheck6" onclick="displayNumber(6)">6</label>
+
+                <input class="btn-check" id="btncheck-" autocomplete="off">
+                <label class="btn btn-outline-warning" for="btncheck-" onclick="displayNumber('-')"><i
+                        class="fa-solid fa-minus"></i></label>
+            </div><br>
+            <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                <input class="btn-check" id="btncheck1" autocomplete="off">
+                <label class="btn btn-outline-light" for="btncheck1" onclick="displayNumber(1)"> 1</label>
+
+                <input class="btn-check" id="btncheck2" autocomplete="off">
+                <label class="btn btn-outline-light" for="btncheck2" onclick="displayNumber(2)"> 2</label>
+
+                <input class="btn-check" id="btncheck3" autocomplete="off">
+                <label class="btn btn-outline-light" for="btncheck3" onclick="displayNumber(3)"> 3</label>
+
+                <input class="btn-check" id="btncheck+" autocomplete="off">
+                <label class="btn btn-outline-warning" for="btncheck+" onclick="displayNumber('+')"><i
+                        class="fa-solid fa-plus"></i></label>
+            </div><br>
+            <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+
+                <input class="btn-check" id="btncheckx" autocomplete="off">
+                <label class="btn btn-outline-warning" for="btncheckx" onclick="displayNumber('*')"><i
+                        class="fa-solid fa-xmark"></i></label>
+
+
+                <input class="btn-check" id="btncheck0" autocomplete="off">
+                <label class="btn btn-outline-light" for="btncheck0" onclick="displayNumber(0)"> 0</label>
+
+                <input class="btn-check" id="btncheck%" autocomplete="off">
+                <label class="btn btn-outline-warning" for="btncheck%" onclick="displayNumber('%')"> <i
+                        class="fa-solid fa-percent"></i></label>
+
+                <input class="btn-check" id="btncheck/" autocomplete="off">
+                <label class="btn btn-outline-warning" for="btncheck/" onclick="displayNumber('/')"><i
+                        class="fa-solid fa-divide"></i></label>
+            </div><br>
+            <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+
+                <input class="btn-check" id="btncheckAC" autocomplete="off">
+                <label class="btn btn-outline-danger" for="btncheckAC" onclick="clearBox()">AC</label>
+
+
+                <input class="btn-check" id="btncheckRemove" autocomplete="off">
+                <label class="btn btn-outline-danger" for="btncheckRemove" onclick="removeLastItem()"><i
+                        class="fa-solid fa-delete-left"></i></label>
+
+
+            </div>
+    </center>
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+body {
+    background-image: url(https://img.freepik.com/premium-photo/modern-brick-wall-3d-rendering_118019-218.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.btn-group {
+    height: 45px;
+    width: 391px;
+    border: 5px white solid;
+    margin-top: 6px;
+
+}
+
+input {
+    height: 51px;
+    width: 403px;
+    border-radius: 7PX;
+    border: 5px rgb(46, 40, 202) solid;
+}
+
+.btn-outline-primary {
+    width: 55px;
+}
+
+/* .h1{
+    color: #fbf0f0;
+    font-family: 'Tilt Prism', cursive;
+    font-size: 5.5rem;
+   
+} */
+
+
+.border {
+    border: 5px white solid;
+}
+
+label {
+    color: #ffff;
+}
+
+.head-box {
+    height: 26rem;
+    width: 32rem;
+    padding-top: 2rem;
+    background-color: black;
+    border-radius: 6rem;
+    box-shadow: 3px 8px 8px 9px;
+}
+
+.icon i{
+    font-size: 87px;
+    color: white; 
+    padding-top: 23px;
+}
+
+@media (max-width:425px) {
+    
+
+    body{
+        height:45rem;
+    }
+    
+}
